@@ -35,7 +35,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="container mx-auto">
-        <BirthdayHero friendName="[Friend's Name]" />
+        <BirthdayHero friendName="Clausen" />
       </section>
 
       {/* Video Reveals Section */}
