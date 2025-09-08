@@ -47,6 +47,22 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        celebration: {
+          DEFAULT: "hsl(var(--celebration))",
+          foreground: "hsl(var(--celebration-foreground))",
+        },
+        party: {
+          DEFAULT: "hsl(var(--party))",
+          foreground: "hsl(var(--party-foreground))",
+        },
+        joy: {
+          DEFAULT: "hsl(var(--joy))",
+          foreground: "hsl(var(--joy-foreground))",
+        },
+        surprise: {
+          DEFAULT: "hsl(var(--surprise))",
+          foreground: "hsl(var(--surprise-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

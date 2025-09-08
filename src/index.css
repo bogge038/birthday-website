@@ -8,26 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Birthday celebration theme */
+    --background: 20 20% 98%;
+    --foreground: 25 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 50% 96%;
+    --card-foreground: 25 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 50% 96%;
+    --popover-foreground: 25 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Warm celebration colors */
+    --primary: 35 85% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 315 65% 85%;
+    --secondary-foreground: 25 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 30% 92%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 75% 75%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Birthday specific colors */
+    --celebration: 45 95% 65%;
+    --celebration-foreground: 25 25% 15%;
+    --party: 315 80% 70%;
+    --party-foreground: 0 0% 100%;
+    --joy: 200 85% 65%;
+    --joy-foreground: 0 0% 100%;
+    --surprise: 350 85% 70%;
+    --surprise-foreground: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-celebration: linear-gradient(135deg, hsl(var(--celebration)), hsl(var(--party)));
+    --gradient-warm: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-joy: linear-gradient(180deg, hsl(var(--joy)), hsl(var(--celebration)));
+
+    /* Animation and effects */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --shadow-celebration: 0 20px 40px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 30px hsl(var(--celebration) / 0.4);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -101,5 +124,63 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(135deg, hsl(var(--background)), hsl(var(--muted)));
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .gradient-celebration {
+    background: var(--gradient-celebration);
+  }
+  
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  
+  .gradient-joy {
+    background: var(--gradient-joy);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  .shadow-celebration {
+    box-shadow: var(--shadow-celebration);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 4s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
   }
 }
