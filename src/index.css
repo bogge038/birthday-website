@@ -19,26 +19,26 @@ All colors MUST be HSL.
     --popover-foreground: 25 25% 15%;
 
     /* Warm celebration colors */
-    --primary: 35 70% 55%;
+    --primary: 35 85% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 315 55% 80%;
+    --secondary: 315 65% 85%;
     --secondary-foreground: 25 25% 15%;
 
     --muted: 45 30% 92%;
     --muted-foreground: 25 15% 45%;
 
-    --accent: 280 60% 70%;
+    --accent: 280 75% 75%;
     --accent-foreground: 0 0% 100%;
 
     /* Birthday specific colors */
-    --celebration: 45 75% 60%;
+    --celebration: 45 95% 65%;
     --celebration-foreground: 25 25% 15%;
-    --party: 315 65% 65%;
+    --party: 315 80% 70%;
     --party-foreground: 0 0% 100%;
-    --joy: 200 70% 60%;
+    --joy: 200 85% 65%;
     --joy-foreground: 0 0% 100%;
-    --surprise: 350 70% 65%;
+    --surprise: 350 85% 70%;
     --surprise-foreground: 0 0% 100%;
 
     /* Gradients */
