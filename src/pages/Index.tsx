@@ -7,25 +7,25 @@ const Index = () => {
   const videoData = [
     {
       videoSrc: "/videos/birthday-video-1.mp4", // Add your first video here
-      title: "Mood1",
+      title: "Memory Lane",
       description: "Our first adventure together!",
       variant: "celebration" as const,
     },
     {
       videoSrc: "/videos/birthday-video-2.mp4", // Add your second video here
-      title: "Mood2",
+      title: "Fun Times",
       description: "All those crazy moments!",
       variant: "party" as const,
     },
     {
       videoSrc: "/videos/birthday-video-3.mp4", // Add your third video here
-      title: "Mood3",
+      title: "Best Friends",
       description: "Through thick and thin!",
       variant: "joy" as const,
     },
     {
       videoSrc: "/videos/birthday-video-4.mp4", // Add your fourth video here
-      title: "Mood4",
+      title: "Birthday Wishes",
       description: "Here's to many more years!",
       variant: "surprise" as const,
     },
@@ -35,7 +35,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="container mx-auto">
-        <BirthdayHero friendName="Clausen" />
+        <BirthdayHero friendName="[Friend's Name]" />
       </section>
 
       {/* Video Reveals Section */}
@@ -56,6 +56,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="text-center py-8 px-4">
         <p className="text-muted-foreground">
+          Made with love for the most amazing friend!
         </p>
       </footer>
     </div>
