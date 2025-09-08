@@ -7,7 +7,7 @@ const Index = () => {
   const videoData = [
     {
       videoSrc: "/videos/birthday-video-1.mp4", // Add your first video here
-      title: "Memory Lane 💝",
+      title: "Mood1",
       description: "Our first adventure together!",
       variant: "celebration" as const,
     },
