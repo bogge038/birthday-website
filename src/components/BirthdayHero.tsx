@@ -9,17 +9,8 @@ const BirthdayHero = ({ friendName }: { friendName: string }) => {
           {friendName}
         </h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-pulse-slow">
-          Get ready for some special surprises! Click on the cards below to reveal your birthday videos 🎬✨
+          Get ready for some special surprises! Click on the cards below to reveal your birthday videos ✨
         </p>
-      </div>
-      
-      {/* Decorative elements */}
-      <div className="mt-12 flex justify-center space-x-8 text-4xl animate-float">
-        <span className="animate-pulse">🎈</span>
-        <span className="animate-pulse delay-100">🎊</span>
-        <span className="animate-pulse delay-200">🎁</span>
-        <span className="animate-pulse delay-300">🍰</span>
-        <span className="animate-pulse delay-500">🎈</span>
       </div>
     </div>
   );
