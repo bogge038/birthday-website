@@ -44,7 +44,7 @@ const VideoReveal = ({ videoSrc, title, description, variant }: VideoRevealProps
             {description}
           </p>
           <div className={`mt-4 text-${colorMap[variant]}-foreground/60 text-xs`}>
-            Click to reveal! 🎉
+            Click to reveal:p
           </div>
         </div>
 
