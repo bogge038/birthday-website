@@ -7,26 +7,26 @@ const Index = () => {
   const videoData = [
     {
       videoSrc: "/videos/birthday-video-1.mp4", // Add your first video here
-      title: "Mood1",
-      description: "Our first adventure together!",
+      title: "Der Aktive Bre",
+      description: "Bewegung macht Ihm viel Spaß",
       variant: "celebration" as const,
     },
     {
       videoSrc: "/videos/birthday-video-2.mp4", // Add your second video here
-      title: "Fun Times 🌟",
-      description: "All those crazy moments!",
+      title: "Der Null-Scheiß-Geber",
+      description: "Jemandes Schrank ist leer",
       variant: "party" as const,
     },
     {
       videoSrc: "/videos/birthday-video-3.mp4", // Add your third video here
-      title: "Best Friends 💫",
-      description: "Through thick and thin!",
+      title: "Der Liebevolle",
+      description: "Immer zärtlich und warmherzig",
       variant: "joy" as const,
     },
     {
       videoSrc: "/videos/birthday-video-4.mp4", // Add your fourth video here
-      title: "Birthday Wishes 🎊",
-      description: "Here's to many more years!",
+      title: "Bonus Mood - Shenanigans",
+      description: "Manchmal unvorhersehbar und offen für Spielereien",
       variant: "surprise" as const,
     },
   ];
@@ -35,7 +35,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="container mx-auto">
-        <BirthdayHero friendName="Clausen" />
+        <BirthdayHero friendName="Hannes MC Clausen" />
       </section>
 
       {/* Video Reveals Section */}
@@ -56,7 +56,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="text-center py-8 px-4">
         <p className="text-muted-foreground">
-          Made with 💖 for the most amazing friend!
+          Hab dich lieb 💖
         </p>
       </footer>
     </div>
