@@ -53,7 +53,6 @@ const VideoReveal = ({ videoSrc, title, description, variant }: VideoRevealProps
           className={`w-full h-full object-cover transition-smooth ${
             isRevealed ? "opacity-100" : "opacity-0"
           }`}
-          controls={isRevealed}
           loop
           muted
           playsInline
