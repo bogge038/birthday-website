@@ -2,7 +2,7 @@ const BirthdayHero = ({ friendName }: { friendName: string }) => {
   return (
     <div className="text-center py-16 px-4">
       <div className="animate-float">
-        <h1 className="text-6xl md:text-8xl font-bold gradient-celebration bg-clip-text text-transparent mb-4">
+        <h1 className="text-6xl md:text-8xl font-bold text-celebration mb-4">
           🎉 Hannes MC Clausen 🎂
         </h1>
         <h2 className="text-3xl md:text-5xl font-semibold text-primary mb-6">
