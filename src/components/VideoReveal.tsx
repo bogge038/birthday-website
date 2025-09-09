@@ -29,7 +29,7 @@ const VideoReveal = ({ videoSrc, title, description, variant }: VideoRevealProps
     <Card className="relative overflow-hidden cursor-pointer transition-bounce hover:scale-105 shadow-celebration group">
       <div
         onClick={() => setIsRevealed(!isRevealed)}
-        className="aspect-video w-full relative"
+        className="aspect-[9/16] w-full relative"
       >
         {/* Text Field Overlay */}
         <div
@@ -57,9 +57,9 @@ const VideoReveal = ({ videoSrc, title, description, variant }: VideoRevealProps
           loop
           muted
           playsInline
-          onLoadedData={(e) => {
-            if (isRevealed) {
-              (e.target as HTMLVideoElement).play().catch(console.log);
+          ref={(video) => {
+            if (video && isRevealed) {
+              video.play().catch(console.log);
             }
           }}
         >
