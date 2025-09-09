@@ -6,7 +6,7 @@ const BirthdayHero = ({ friendName }: { friendName: string }) => {
           🎉 Hannes MC Clausen 🎂
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-pulse-slow mt-6">
-          Ich wünsche dir alles liebe zum Geburtstag! Fühl dich gedrückt und geküsst! Anliegend findest du 4 deiner Moods😊 
+          Ich wünsche dir alles Liebe zum Geburtstag! Fühl dich gedrückt und geküsst! Anliegend findest du 4 deiner Moods😊 
         </p>
       </div>
       
